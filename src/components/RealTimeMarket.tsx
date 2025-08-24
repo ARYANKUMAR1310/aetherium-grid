@@ -139,7 +139,7 @@ const RealTimeMarket = () => {
   };
 
   return (
-    <section id="real-time-market" className="py-20 bg-gradient-to-b from-background to-muted/20">
+    <section id="real-time-market" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-4">
@@ -152,7 +152,7 @@ const RealTimeMarket = () => {
           </p>
         </div>
 
-        <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
+        <Card>
           <CardContent className="p-6">
             <Tabs defaultValue="market-snapshot" className="w-full">
               <TabsList className="grid w-full grid-cols-2 mb-6">
@@ -170,7 +170,7 @@ const RealTimeMarket = () => {
                   <div>
                     <Label htmlFor="interval">Select Interval</Label>
                     <Select value={selectedInterval} onValueChange={setSelectedInterval}>
-                      <SelectTrigger className="bg-glass-bg border-glass-border">
+                      <SelectTrigger>
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -187,7 +187,6 @@ const RealTimeMarket = () => {
                       id="date-range"
                       value={deliveryDateRange}
                       onChange={(e) => setDeliveryDateRange(e.target.value)}
-                      className="bg-glass-bg border-glass-border"
                     />
                   </div>
 
@@ -259,14 +258,14 @@ const RealTimeMarket = () => {
                       id="search"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-48 h-8 bg-glass-bg border-glass-border"
+                      className="w-48 h-8"
                       placeholder="Search..."
                     />
                   </div>
                 </div>
 
                 {/* Data Table */}
-                <div className="border border-glass-border rounded-lg overflow-hidden">
+                <div className="border rounded-lg overflow-hidden">
                   <Table>
                     <TableHeader>
                       <TableRow className="bg-primary hover:bg-primary">

@@ -6,15 +6,15 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-glass backdrop-blur-md border-b border-glass-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow-primary">
+            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
               <Zap className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-foreground">
               Aetherium
             </span>
           </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-glass backdrop-blur-md border-b border-glass-border">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border">
             <div className="flex flex-col p-6 space-y-4">
               <a href="#marketplace" className="text-foreground/80 hover:text-primary transition-colors">
                 Marketplace
@@ -77,7 +77,7 @@ const Navbar = () => {
               <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
                 About
               </a>
-              <div className="flex flex-col space-y-2 pt-4 border-t border-glass-border">
+              <div className="flex flex-col space-y-2 pt-4 border-t border-border">
                 <Button variant="outline" size="sm">
                   Connect Wallet
                 </Button>

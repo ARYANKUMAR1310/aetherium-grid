@@ -75,10 +75,10 @@ const EnergyMarketplace = () => {
   };
 
   return (
-    <section id="marketplace" className="py-20 bg-gradient-to-b from-muted/20 to-background">
+    <section id="marketplace" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 text-foreground">
             Energy Marketplace
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -92,7 +92,7 @@ const EnergyMarketplace = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input 
               placeholder="Search by location, seller, or energy type..." 
-              className="pl-10 bg-glass-bg border-glass-border"
+              className="pl-10"
             />
           </div>
           <Button variant="outline" className="flex items-center gap-2">
@@ -103,19 +103,19 @@ const EnergyMarketplace = () => {
 
         {/* Market Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border text-center p-4">
+          <Card className="text-center p-4">
             <div className="text-2xl font-bold text-primary">156</div>
             <div className="text-sm text-muted-foreground">Active Listings</div>
           </Card>
-          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border text-center p-4">
+          <Card className="text-center p-4">
             <div className="text-2xl font-bold text-secondary">0.47 ETH</div>
             <div className="text-sm text-muted-foreground">Avg Price/kWh</div>
           </Card>
-          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border text-center p-4">
+          <Card className="text-center p-4">
             <div className="text-2xl font-bold text-accent">2,340</div>
             <div className="text-sm text-muted-foreground">kWh Available</div>
           </Card>
-          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border text-center p-4">
+          <Card className="text-center p-4">
             <div className="text-2xl font-bold text-primary">24h</div>
             <div className="text-sm text-muted-foreground">Avg Delivery</div>
           </Card>
@@ -126,11 +126,11 @@ const EnergyMarketplace = () => {
           <div className="lg:col-span-2 space-y-4">
             <h3 className="text-xl font-semibold mb-4">Available Energy</h3>
             {energyListings.map((listing) => (
-              <Card key={listing.id} className="bg-gradient-glass backdrop-blur-md border-glass-border hover:shadow-glow-primary transition-all duration-300">
+              <Card key={listing.id} className="hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
                         <Zap className="h-5 w-5 text-primary-foreground" />
                       </div>
                       <div>
@@ -175,7 +175,7 @@ const EnergyMarketplace = () => {
                   </div>
 
                   <div className="flex gap-2">
-                    <Button variant="hero" size="sm" className="flex-1">
+                    <Button size="sm" className="flex-1">
                       Buy Now
                     </Button>
                     <Button variant="outline" size="sm">
@@ -189,7 +189,7 @@ const EnergyMarketplace = () => {
 
           {/* Sell Energy Form */}
           <div className="space-y-6">
-            <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TrendingUp className="h-5 w-5 text-primary" />
@@ -201,8 +201,7 @@ const EnergyMarketplace = () => {
                   <Label htmlFor="amount">Amount (kWh)</Label>
                   <Input 
                     id="amount" 
-                    placeholder="Enter kWh amount" 
-                    className="bg-glass-bg border-glass-border"
+                    placeholder="Enter kWh amount"
                   />
                 </div>
                 
@@ -210,8 +209,7 @@ const EnergyMarketplace = () => {
                   <Label htmlFor="price">Price per kWh (ETH)</Label>
                   <Input 
                     id="price" 
-                    placeholder="0.50" 
-                    className="bg-glass-bg border-glass-border"
+                    placeholder="0.50"
                   />
                 </div>
                 
@@ -219,14 +217,13 @@ const EnergyMarketplace = () => {
                   <Label htmlFor="duration">Listing Duration</Label>
                   <Input 
                     id="duration" 
-                    placeholder="24 hours" 
-                    className="bg-glass-bg border-glass-border"
+                    placeholder="24 hours"
                   />
                 </div>
                 
                 <div>
                   <Label htmlFor="energy-type">Energy Source</Label>
-                  <select className="w-full p-2 rounded-md bg-glass-bg border border-glass-border text-foreground">
+                  <select className="w-full p-2 rounded-md border text-foreground">
                     <option value="solar">Solar</option>
                     <option value="wind">Wind</option>
                     <option value="hydro">Hydro</option>
@@ -234,7 +231,7 @@ const EnergyMarketplace = () => {
                   </select>
                 </div>
 
-                <Button variant="energy" className="w-full">
+                <Button className="w-full">
                   <Zap className="mr-2 h-4 w-4" />
                   List Energy for Sale
                 </Button>
@@ -246,7 +243,7 @@ const EnergyMarketplace = () => {
             </Card>
 
             {/* Market Trends */}
-            <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
+            <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Market Trends</CardTitle>
               </CardHeader>
