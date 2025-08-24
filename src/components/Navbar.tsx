@@ -24,6 +24,9 @@ const Navbar = () => {
             <a href="#marketplace" className="text-foreground/80 hover:text-primary transition-colors">
               Marketplace
             </a>
+            <a href="#real-time-market" className="text-foreground/80 hover:text-primary transition-colors">
+              Real Time Market
+            </a>
             <a href="#dashboard" className="text-foreground/80 hover:text-primary transition-colors">
               Dashboard
             </a>
@@ -61,6 +64,9 @@ const Navbar = () => {
             <div className="flex flex-col p-6 space-y-4">
               <a href="#marketplace" className="text-foreground/80 hover:text-primary transition-colors">
                 Marketplace
+              </a>
+              <a href="#real-time-market" className="text-foreground/80 hover:text-primary transition-colors">
+                Real Time Market
               </a>
               <a href="#dashboard" className="text-foreground/80 hover:text-primary transition-colors">
                 Dashboard
