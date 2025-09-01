@@ -14,10 +14,10 @@ import {
 
 const EnergyDashboard = () => {
   return (
-    <section id="dashboard" className="py-20 bg-muted/30">
+    <section id="dashboard" className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Energy Dashboard
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ const EnergyDashboard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* Energy Overview */}
-          <Card className="lg:col-span-2">
+          <Card className="lg:col-span-2 bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="h-5 w-5 text-primary" />
@@ -77,7 +77,7 @@ const EnergyDashboard = () => {
           </Card>
 
           {/* Quick Actions */}
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Plus className="h-5 w-5 text-primary" />
@@ -85,11 +85,11 @@ const EnergyDashboard = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Button className="w-full justify-start">
+              <Button variant="energy" className="w-full justify-start">
                 <Zap className="mr-2 h-4 w-4" />
                 List Energy for Sale
               </Button>
-              <Button variant="secondary" className="w-full justify-start">
+              <Button variant="glass" className="w-full justify-start">
                 <Battery className="mr-2 h-4 w-4" />
                 Add Manual Reading
               </Button>
@@ -107,7 +107,7 @@ const EnergyDashboard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Recent Trades */}
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-primary" />
@@ -144,7 +144,7 @@ const EnergyDashboard = () => {
           </Card>
 
           {/* Earnings */}
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <DollarSign className="h-5 w-5 text-secondary" />
@@ -177,7 +177,7 @@ const EnergyDashboard = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full">
+                <Button variant="hero" className="w-full">
                   Withdraw Earnings
                 </Button>
               </div>

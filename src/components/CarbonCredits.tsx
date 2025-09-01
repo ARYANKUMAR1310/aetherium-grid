@@ -47,10 +47,10 @@ const CarbonCredits = () => {
   ];
 
   return (
-    <section id="carbon-credits" className="py-20 bg-background">
+    <section id="carbon-credits" className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Carbon Credits
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -60,7 +60,7 @@ const CarbonCredits = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* Carbon Credits Overview */}
-          <Card className="lg:col-span-2">
+          <Card className="lg:col-span-2 bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Leaf className="h-5 w-5 text-secondary" />
@@ -97,7 +97,7 @@ const CarbonCredits = () => {
           </Card>
 
           {/* Quick Actions */}
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Award className="h-5 w-5 text-secondary" />
@@ -105,11 +105,11 @@ const CarbonCredits = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Button className="w-full justify-start">
+              <Button variant="energy" className="w-full justify-start">
                 <Leaf className="mr-2 h-4 w-4" />
                 Mint New Credits
               </Button>
-              <Button variant="secondary" className="w-full justify-start">
+              <Button variant="glass" className="w-full justify-start">
                 <TrendingUp className="mr-2 h-4 w-4" />
                 Trade Credits
               </Button>
@@ -129,7 +129,7 @@ const CarbonCredits = () => {
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">Your Carbon Credits</h3>
           {carbonCredits.map((credit) => (
-            <Card key={credit.id} className="hover:shadow-lg transition-all duration-300">
+            <Card key={credit.id} className="bg-gradient-glass backdrop-blur-md border-glass-border hover:shadow-glow-secondary transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex items-start gap-4">
@@ -191,7 +191,7 @@ const CarbonCredits = () => {
 
         {/* Impact Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Globe className="h-5 w-5 text-secondary" />
@@ -218,7 +218,7 @@ const CarbonCredits = () => {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-primary" />
