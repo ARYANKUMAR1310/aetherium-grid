@@ -28,8 +28,8 @@ const Hero = () => {
             Decentralized Energy Marketplace
           </p>
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Transform from energy consumer to prosumer. Trade renewable energy directly, 
-            earn carbon credits, and build a sustainable future through blockchain-powered peer-to-peer energy trading.
+            Transform from energy consumer to prosumer. Trade renewable energy directly 
+            and build a sustainable future through blockchain-powered peer-to-peer energy trading.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
 
         {/* Feature cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <Card className="bg-gradient-glass backdrop-blur-md border-glass-border p-6 hover:shadow-glow-primary transition-all duration-300 group">
             <div className="text-center">
               <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center group-hover:shadow-glow-primary transition-all duration-300">
@@ -54,18 +54,6 @@ const Hero = () => {
               <h3 className="text-lg font-semibold mb-2">P2P Trading</h3>
               <p className="text-muted-foreground text-sm">
                 Sell excess energy directly to neighbors and earn more
-              </p>
-            </div>
-          </Card>
-
-          <Card className="bg-gradient-glass backdrop-blur-md border-glass-border p-6 hover:shadow-glow-secondary transition-all duration-300 group">
-            <div className="text-center">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-secondary/20 flex items-center justify-center group-hover:shadow-glow-secondary transition-all duration-300">
-                <Leaf className="h-6 w-6 text-secondary" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Carbon Credits</h3>
-              <p className="text-muted-foreground text-sm">
-                Earn tokenized carbon credits for renewable energy
               </p>
             </div>
           </Card>

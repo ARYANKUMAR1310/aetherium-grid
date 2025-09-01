@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import EnergyDashboard from "@/components/EnergyDashboard";
 import EnergyMarketplace from "@/components/EnergyMarketplace";
 import RealTimeMarket from "@/components/RealTimeMarket";
-import EnergyAssets from "@/components/EnergyAssets";
 
 const Index = () => {
   return (
@@ -14,7 +13,6 @@ const Index = () => {
         <EnergyDashboard />
         <EnergyMarketplace />
         <RealTimeMarket />
-        <EnergyAssets />
       </main>
     </div>
   );

@@ -30,9 +30,6 @@ const Navbar = () => {
             <a href="#dashboard" className="text-foreground/80 hover:text-primary transition-colors">
               Dashboard
             </a>
-            <a href="#energy-assets" className="text-foreground/80 hover:text-primary transition-colors">
-              Energy Assets
-            </a>
             <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
               About
             </a>
@@ -70,9 +67,6 @@ const Navbar = () => {
               </a>
               <a href="#dashboard" className="text-foreground/80 hover:text-primary transition-colors">
                 Dashboard
-              </a>
-              <a href="#energy-assets" className="text-foreground/80 hover:text-primary transition-colors">
-                Energy Assets
               </a>
               <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
                 About

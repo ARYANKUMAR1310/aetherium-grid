@@ -97,10 +97,6 @@ const EnergyDashboard = () => {
                 <BarChart3 className="mr-2 h-4 w-4" />
                 View Analytics
               </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <Leaf className="mr-2 h-4 w-4" />
-                Carbon Credits
-              </Button>
             </CardContent>
           </Card>
         </div>
@@ -161,11 +157,7 @@ const EnergyDashboard = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-sm">Energy Sales</span>
-                    <span className="font-medium text-primary">$612.30</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm">Carbon Credits</span>
-                    <span className="font-medium text-secondary">$235.20</span>
+                    <span className="font-medium text-primary">$847.50</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-sm">Grid Services</span>
