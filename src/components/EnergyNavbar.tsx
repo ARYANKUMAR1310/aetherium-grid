@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, Wallet } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/aetherium-logo.png";
 
 const EnergyNavbar = () => {
@@ -12,7 +13,7 @@ const EnergyNavbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="Aetherium" className="h-10 w-10" />
+            <img src={logo} alt="Aetherium" className="h-10 w-10 rounded-full object-cover border-2 border-primary/20" />
             <div>
               <h1 className="text-xl font-bold text-foreground">AETHERIUM</h1>
               <p className="text-xs text-muted-foreground">Energy Trading Platform</p>
@@ -36,6 +37,9 @@ const EnergyNavbar = () => {
             <Button variant="outline" size="sm">
               <User className="h-4 w-4 mr-2" />
               Profile
+            </Button>
+            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+              <Link to="/signup">Sign Up</Link>
             </Button>
           </div>
 
@@ -64,6 +68,11 @@ const EnergyNavbar = () => {
                 <Button variant="outline" size="sm" className="flex-1">
                   <User className="h-4 w-4 mr-2" />
                   Profile
+                </Button>
+              </div>
+              <div className="p-2">
+                <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                  <Link to="/signup">Sign Up</Link>
                 </Button>
               </div>
             </div>
