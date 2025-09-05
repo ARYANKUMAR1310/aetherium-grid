@@ -1,18 +1,24 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import EnergyDashboard from "@/components/EnergyDashboard";
-import EnergyMarketplace from "@/components/EnergyMarketplace";
+import EnergyNavbar from "@/components/EnergyNavbar";
+import EnergyHero from "@/components/EnergyHero";
+import ProsumerDashboard from "@/components/ProsumerDashboard";
+import PoolSection from "@/components/PoolSection";
+import TradesSection from "@/components/TradesSection";
+import MarketInsights from "@/components/MarketInsights";
+import ProfileWallet from "@/components/ProfileWallet";
 import RealTimeMarket from "@/components/RealTimeMarket";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <EnergyNavbar />
       <main>
-        <Hero />
-        <EnergyDashboard />
-        <EnergyMarketplace />
+        <EnergyHero />
+        <ProsumerDashboard />
+        <PoolSection />
+        <TradesSection />
+        <MarketInsights />
         <RealTimeMarket />
+        <ProfileWallet />
       </main>
     </div>
   );
