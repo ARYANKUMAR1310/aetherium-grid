@@ -25,8 +25,7 @@ const ProsumerDashboard = () => {
               <div className="flex items-center mt-2">
                 <Sun className="h-3 w-3 text-yellow-500 mr-1" />
                 <span className="text-xs">Solar: 8.2 kWh</span>
-                <Wind className="h-3 w-3 text-blue-500 ml-2 mr-1" />
-                <span className="text-xs">Wind: 4.2 kWh</span>
+
               </div>
             </CardContent>
           </Card>

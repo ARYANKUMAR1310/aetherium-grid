@@ -10,7 +10,7 @@ const EnergyHero = () => {
             Trade Your <span className="text-primary">Clean Energy</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Break free from DISCOM monopoly. Pool your renewable energy with other prosumers and trade directly on IEX/PXIL for better rates. Get ₹5-6/kWh instead of ₹2-3/kWh.
+            Pool your renewable energy with other prosumers and trade directly on IEX/PXIL for better rates.
           </p>
         </div>
 

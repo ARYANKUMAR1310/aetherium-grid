@@ -45,7 +45,7 @@ const PoolSection = () => {
                     <p className="text-2xl font-bold">127</p>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Pool Value</p>
+                    <p className="text-sm text-muted-foreground">Forecasted Pool Value</p>
                     <p className="text-2xl font-bold">₹4,912</p>
                   </div>
                 </div>
